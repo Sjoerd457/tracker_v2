@@ -4,7 +4,11 @@ repos:
     rev: v0.0.257  # Use the latest version or specify a specific version
     hooks:
       - id: ruff
-        args: ["--fix", "--select", "ALL", "--ignore", "E501"]  # Adjust arguments as needed
+        args: [
+          "--fix", 
+          "--select", "ALL", 
+          "--ignore", "E501,D203,D213"
+        ]  # Adjust arguments as needed
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.971  # Use the latest version or specify a specific version
